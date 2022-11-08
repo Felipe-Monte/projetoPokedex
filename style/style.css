@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(102, 102, 235), white);
+}
+
+section {
+    max-width: 425px;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    max-width: 425px;
+}
+
+#img-pokemon {
+    position: absolute;
+    height: 20%;
+    width: 28%;
+    top: 30%;
+    right: 38%;
+}
+
+.span-h1 {
+    position: absolute;
+    left: 35%;
+    top: 55%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: clamp(.5px, 4vw, 18px);
+}
+
+.span-name {
+    text-transform: capitalize;
+}
+
+#itexto {
+    position: absolute;
+    top: 65%;
+    right: 22%;
+    width: 63%;
+    height: 6%;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: clamp(.5px, 4vw, 18px);
+    font-weight: 600;
+    border-radius: 3px;
+    border: 2px solid black;
+    box-shadow: -3px 3px 0 #888, -5px 6px rgb(36, 36, 36);
+}
+
+.my-buttons {
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+    width: 63%;
+    bottom: 10%;
+    left: 16%;
+    border: none;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(66, 66, 66);
+    width: 50%;
+    padding: 3%;
+    font-size: clamp(.5px, 4vw, 18px);
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 5px;
+    box-shadow: -3px 3px 0 rgb(37, 37, 37), -5px 6px black;
+}
+
+.btn:active {
+    box-shadow: inset -3px 3px 0 rgb(34, 34, 34);
+}
