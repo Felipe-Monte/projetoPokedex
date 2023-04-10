@@ -1,5 +1,5 @@
 # projetoPokedex
-Pokédex  HTML, CSS, JavaScript e API https://pokeapi.co/
+Pokédex  HTML, CSS, JavaScript e API https://pokeapi.co/ <br>
 Select you pokemon !
 
 <p align="center">
