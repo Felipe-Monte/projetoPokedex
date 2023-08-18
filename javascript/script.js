@@ -8,13 +8,13 @@ let text = document.getElementById('itexto')
 let btnNext = document.getElementById('btn-next')
 let btnPrev = document.getElementById('btn-prev')
 
-let searchPokemon = 1
+let searchPokemon = 1;
 
 const fetchPokemon = async function (pokemon) {
     const APIresponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     if (APIresponse.status == 200) {
         const data = await APIresponse.json();
-        return data
+        return data;
     }
 }
 
@@ -31,7 +31,7 @@ const pokemonRender = async function (pokemon) {
         pokeImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
         searchPokemon = data.id;
 
-        console.log(data)
+        
         text.value = ''
     } else {
         pokeName.innerHTML = 'Not Found'
